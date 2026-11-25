@@ -18,9 +18,9 @@ function ordenar(lista) {
   const copia = [...lista];
 
   if (modo === 'menor') {
-    copia.sort((a, b) => formatarPreco(a.preco).localeCompare(formatarPreco(b.preco)));
+    copia.sort((a, b) => a.preco - b.preco);
   } else if (modo === 'maior') {
-    copia.sort((a, b) => formatarPreco(b.preco).localeCompare(formatarPreco(a.preco)));
+    copia.sort((a, b) => b.preco - a.preco)
   } else if (modo === 'nome') {
     copia.sort((a, b) => a.nome.localeCompare(b.nome));
   }
