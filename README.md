@@ -135,12 +135,6 @@ laboratório do zero: `git checkout -b treino-2 f643aae`.
 
 ---
 
-## 🤝 Quer treinar também?
-
-Faça um fork, rode localmente e resolva os chamados no Service Desk. O gabarito não está no
-repositório, de propósito: a graça é investigar. Use o botão **"💡 Pedir dica ao N3"** quando travar.
-
 ---
 
-<sub>Laboratório montado com apoio de IA (Claude) para estruturar o cenário. Os bugs são intencionais,
-e as correções e os Pull Requests são feitos por mim, chamado a chamado.</sub>
+<sub>Esse projeto foi feito com foco de adquirir experiencia na área como junior, com problemas de nivel 1,2 que acontece no dia a dia. Utilizei da IA CLAUDE para geração dos bugs intencionais para aprender como seria trabalhar na área no dia a dia, com esse contato n1/n2.</sub>
