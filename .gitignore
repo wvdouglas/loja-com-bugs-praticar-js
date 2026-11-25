@@ -5,6 +5,12 @@ node_modules/
 # Correções de DADOS devem ser feitas no data/db.seed.json (esse sim é versionado).
 data/db.json
 
+# Gabarito fica só na máquina local (não vai para o GitHub)
+.gabarito/
+
+# Configuração local de ferramentas
+.claude/
+
 # Arquivos do sistema/editor
 .DS_Store
 Thumbs.db

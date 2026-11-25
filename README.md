@@ -13,7 +13,7 @@ investigar, corrigir o código e documentar a solução.
 | `data/` | "Banco de dados" em JSON (`db.json`) e o original (`db.seed.json`) | — |
 | `virtech-helpdesk/` | **Sistema de chamados da Virtech** (a sua fila de trabalho) | http://localhost:4000 |
 | `parceiro/` | Site de um parceiro que consome a API (usado em 1 chamado) | http://localhost:5500 |
-| `.gabarito/` | Respostas. **Só abra depois de tentar!** | — |
+| `.gabarito/` | Respostas. **Só abra depois de tentar!** (só na máquina local, não vai para o GitHub) | — |
 
 ## Como rodar
 
