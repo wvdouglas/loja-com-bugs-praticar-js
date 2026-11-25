@@ -59,8 +59,24 @@ Cupom de desconto: `DESCONTO10`
 **Modo plantão** (ligado por padrão): os chamados chegam aos poucos, com aviso e som, e o SLA
 corre de verdade. Desligue no topo para ver todos de uma vez. "Resetar fila" zera o progresso.
 
-> Dica: rode `git init` e faça um commit antes de começar. Assim você vê com `git diff`
-> exatamente o que mudou em cada correção (e pode desfazer).
+## Fluxo Git (um chamado = uma branch)
+
+O projeto já é um repositório Git. A `main` faz o papel de "produção".
+
+```powershell
+git checkout main                              # 1. parte da main
+git checkout -b fix/VT-1003-total-carrinho-nan # 2. branch do chamado
+# 3. reproduz, corrige, testa
+git diff                                       # 4. revisa o que mudou
+git add public/js/carrinho.js                  # 5. adiciona só o que é do chamado
+git commit -m "fix(carrinho): resumo da correção" -m "Causa raiz... Refs: VT-1003"
+git checkout main                              # 6. "PR aprovado": volta pra main
+git merge --no-ff fix/VT-1003-total-carrinho-nan
+git log --oneline --graph                      # 7. histórico dos atendimentos
+```
+
+Coloque o hash do commit no campo "Arquivos alterados" ao resolver o chamado no Service Desk.
+`data/db.json` não é versionado: correções de dados vão no `data/db.seed.json`.
 
 Alguns chamados se cruzam (ex.: produtos que não aparecem no catálogo por causa de outro bug).
 No mundo real também é assim. Use os links diretos `produto.html?id=N` quando precisar.
