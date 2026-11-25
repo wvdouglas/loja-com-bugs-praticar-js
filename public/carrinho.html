@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechLoja — Carrinho</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="cabecalho"></header>
+
+  <main>
+    <h1>Meu carrinho</h1>
+    <ul id="itens" class="lista-itens"></ul>
+
+    <div class="resumo">
+      <div class="cupom">
+        <input id="cupom" placeholder="Cupom de desconto">
+        <button id="btn-cupom" class="btn-sec">Aplicar</button>
+      </div>
+      <p>Subtotal: <strong id="subtotal">R$ 0,00</strong></p>
+      <p>Desconto: <strong id="desconto">R$ 0,00</strong></p>
+      <p class="total">Total: <strong id="total">R$ 0,00</strong></p>
+      <button id="btn-finalizar" class="btn grande">Finalizar compra</button>
+      <p id="msg" class="erro"></p>
+    </div>
+  </main>
+
+  <script src="js/comum.js"></script>
+  <script src="js/carrinho.js"></script>
+</body>
+</html>

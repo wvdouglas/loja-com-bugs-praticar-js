@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtech Service Desk</title>
+  <link rel="stylesheet" href="css/helpdesk.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="marca">
+      <span class="logo-v">V</span>
+      <div><strong>VIRTECH</strong><small>Service Desk</small></div>
+    </div>
+    <input id="busca" class="busca" type="search" placeholder="Buscar chamado, cliente, assunto...">
+    <div class="topo-direita">
+      <label class="alternar" title="Chamados chegam aos poucos, como num plantão real">
+        <input type="checkbox" id="modo-plantao"> <span>Modo plantão</span>
+      </label>
+      <button id="btn-resetar" class="btn-fantasma" title="Volta todos os chamados ao estado inicial">Resetar fila</button>
+      <div class="analista"><span class="avatar">VC</span><div><b>Você</b><small>Analista N1/N2</small></div></div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="lateral">
+      <h6>Filas</h6>
+      <nav id="filas"></nav>
+      <h6>Nível</h6>
+      <nav id="niveis"></nav>
+      <div class="cliente-box">
+        <h6>Cliente atendido</h6>
+        <p><b>TechLoja</b><br>E-commerce de informática<br><a href="http://localhost:3000" target="_blank">localhost:3000 ↗</a></p>
+      </div>
+    </aside>
+
+    <main id="conteudo"></main>
+  </div>
+
+  <div id="modal" class="modal" hidden></div>
+  <div id="toasts" class="toasts"></div>
+
+  <script src="js/chamados-dados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

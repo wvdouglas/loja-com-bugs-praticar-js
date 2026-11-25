@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechLoja — Painel admin</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="cabecalho"></header>
+
+  <main>
+    <h1>Painel do administrador</h1>
+    <div id="restrito" class="erro" hidden>Acesso restrito ao administrador.</div>
+
+    <div id="painel" hidden>
+      <form id="form-produto" class="form linha">
+        <input type="hidden" name="id">
+        <label>Nome <input name="nome" required></label>
+        <label>Preço <input name="preco" type="number" step="0.01" required></label>
+        <label>Estoque <input name="estoque" type="number" required></label>
+        <label>Imagem <input name="imagem" placeholder="imagens/arquivo.svg"></label>
+        <button class="btn" id="btn-salvar">Cadastrar produto</button>
+        <button type="button" class="btn-sec" id="btn-cancelar" hidden>Cancelar edição</button>
+      </form>
+
+      <table class="tabela">
+        <thead>
+          <tr><th>ID</th><th>Nome</th><th>Preço</th><th>Estoque</th><th></th></tr>
+        </thead>
+        <tbody id="tabela-produtos"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="js/comum.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "usuarios": [
+    { "id": 1, "nome": "Administrador", "email": "admin@loja.com", "senha": "admin123", "papel": "admin" },
+    { "id": 2, "nome": "João Pereira", "email": "joao@email.com", "senha": "123456", "papel": "cliente" },
+    { "id": 3, "nome": "Maria Souza", "email": "maria@email.com", "senha": "maria123", "papel": "cliente" }
+  ],
+  "produtos": [
+    { "id": 1, "nome": "Teclado Mecânico RGB", "preco": 299.9, "estoque": 12, "imagem": "imagens/teclado.svg" },
+    { "id": 2, "nome": "Mouse Gamer 16000 DPI", "preco": 149.9, "estoque": 30, "imagem": "imagens/mouse.png" },
+    { "id": 3, "nome": "Monitor 27\" 144Hz", "preco": 1499, "estoque": 5, "imagem": "imagens/monitor.svg" },
+    { "id": 4, "nome": "Headset 7.1 Surround", "preco": 249.9, "estoque": 18, "imagem": "imagens/headset.svg" },
+    { "id": 5, "nome": "Webcam Full HD", "preco": 199.9, "estoque": 9, "imagem": "imagens/webcam.png" },
+    { "id": 6, "nome": "Cadeira Gamer Reclinável", "preco": 1299, "estoque": 4, "imagem": "imagens/cadeira.svg" },
+    { "id": 7, "nome": "Notebook i7 16GB", "preco": 4599, "estoque": 3, "imagem": "imagens/notebook.svg" },
+    { "id": 8, "nome": "SSD NVMe 1TB", "preco": 459.9, "estoque": 25, "imagem": "imagens/ssd.svg" },
+    { "id": 9, "nome": "Pendrive 64GB", "preco": 39.9, "estoque": 60, "imagem": "imagens/pendrive.svg" },
+    { "id": 10, "nome": "Hub USB-C 7 em 1", "preco": 129.9, "estoque": 15, "imagem": "imagens/hub.svg" },
+    { "id": 11, "nome": "Mousepad XL", "preco": 79.9, "estoque": 40, "imagem": "imagens/mousepad.svg" },
+    { "id": 12, "nome": "Microfone USB Condensador", "preco": 349.9, "estoque": 1, "imagem": "imagens/microfone.svg" },
+    { "id": 13, "nome": "Cabo HDMI 2.1 2m", "preco": 24.9, "estoque": 100, "imagem": "imagens/cabo.svg" },
+    { "id": 14, "nome": "Suporte Articulado p/ Monitor", "preco": 189.9, "estoque": 7, "imagem": "imagens/suporte.svg" }
+  ],
+  "avaliacoes": [
+    { "id": 1, "produtoId": 8, "autor": "Carlos Lima", "texto": "Muito rápido, Windows liga em 8 segundos.", "nota": 5 },
+    { "id": 2, "produtoId": 8, "autor": "Visitante", "texto": "Produto bom <img src=x onerror=\"alert('Você foi hackeado! Seus dados foram enviados.')\">", "nota": 1 },
+    { "id": 3, "produtoId": 1, "autor": "Ana Paula", "texto": "Melhor teclado que já tive.", "nota": 5 }
+  ],
+  "pedidos": [
+    {
+      "id": 1001, "usuarioId": 2, "data": "2026-11-20", "status": "entregue",
+      "itens": [{ "produtoId": 9, "nome": "Pendrive 64GB", "preco": 39.9, "quantidade": 2 }],
+      "desconto": 0, "total": 79.8
+    },
+    {
+      "id": 1002, "usuarioId": 3, "data": "2026-11-21", "status": "entregue",
+      "itens": [{ "produtoId": 13, "nome": "Cabo HDMI 2.1 2m", "preco": 24.9, "quantidade": 1 }],
+      "desconto": 0, "total": 24.9
+    },
+    {
+      "id": 1003, "usuarioId": 2, "data": "2026-11-23", "status": "pago",
+      "itens": [{ "produtoId": 7, "nome": "Notebook i7 16GB", "preco": 0.01, "quantidade": 1 }],
+      "desconto": 0, "total": 0.01
+    }
+  ]
+}

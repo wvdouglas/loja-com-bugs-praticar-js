@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <rect width="300" height="200" rx="16" fill="#65a30d" opacity="0.12"/>
+  <circle cx="150" cy="95" r="58" fill="#65a30d" opacity="0.18"/>
+  <text x="150" y="118" font-size="64" text-anchor="middle">🦾</text>
+  <text x="150" y="182" font-size="16" font-family="sans-serif" fill="#65a30d" text-anchor="middle">suporte</text>
+</svg>

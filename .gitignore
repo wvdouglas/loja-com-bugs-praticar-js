@@ -1,0 +1,11 @@
+# Bibliotecas instaladas pelo npm (recriadas com "npm install")
+node_modules/
+
+# Banco "vivo": muda toda vez que você usa a loja e é recriado com "npm run reset".
+# Correções de DADOS devem ser feitas no data/db.seed.json (esse sim é versionado).
+data/db.json
+
+# Arquivos do sistema/editor
+.DS_Store
+Thumbs.db
+*.log

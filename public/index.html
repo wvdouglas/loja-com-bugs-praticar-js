@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechLoja — Catálogo</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="cabecalho"></header>
+
+  <main>
+    <div class="topo-catalogo">
+      <h1>Catálogo</h1>
+      <label>Ordenar por
+        <select id="ordenar">
+          <option value="padrao">Padrão</option>
+          <option value="menor">Menor preço</option>
+          <option value="maior">Maior preço</option>
+          <option value="nome">Nome (A-Z)</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="grade" class="grade"></div>
+    <div id="paginacao" class="paginacao"></div>
+  </main>
+
+  <script src="js/comum.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

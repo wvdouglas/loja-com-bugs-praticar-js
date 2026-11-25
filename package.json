@@ -1,0 +1,16 @@
+{
+  "name": "helpdesk-loja",
+  "version": "1.0.0",
+  "description": "Loja de informática fictícia para treinar atendimento de chamados N1/N2 em JavaScript",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "reset": "node scripts/resetar-banco.js",
+    "parceiro": "node parceiro/servidor.js",
+    "helpdesk": "node virtech-helpdesk/servidor.js"
+  },
+  "dependencies": {
+    "express": "4.21.2"
+  }
+}
