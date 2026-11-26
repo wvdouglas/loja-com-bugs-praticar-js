@@ -36,7 +36,7 @@
 |---|---|:-:|:-:|:-:|
 | VT-1001 | Clientes não conseguem entrar pelo celular | N1 | Alta | ⏳ Aberto |
 | VT-1002 | Preciso logar de novo toda vez que abro outra aba | N1 | Média | ⏳ Aberto |
-| VT-1003 | Total do carrinho aparece "R$ NaN" | N1 | Crítica | ⏳ Aberto |
+| VT-1003 | Total do carrinho aparece "R$ NaN" | N1 | Crítica | ✅ [Resolvido](https://github.com/wvdouglas/loja-com-bugs-praticar-js/blob/main/public/js/carrinho.js#L3-L5)¹ |
 | VT-1004 | Data do pedido aparece um dia antes | N1 | Média | ⏳ Aberto |
 | VT-1005 | Produtos sumiram do catálogo e a última página fica vazia | N2 | Alta | ⏳ Aberto |
 | VT-1006 | Vendemos 3 microfones mas só tinha 1 no estoque | N2 | Crítica | ✅ [PR #1](https://github.com/wvdouglas/loja-com-bugs-praticar-js/pull/1) |
@@ -55,7 +55,9 @@
 | VT-1019 | Cliquei em "Sair" e o próximo cliente entrou na minha conta | N1 | Alta | ⏳ Aberto |
 | VT-1020 | [FRAUDE] Notebook vendido por R$ 0,01 | N2 | Crítica | ⏳ Aberto |
 
-**Progresso:** 2 de 20 resolvidos. Os PRs de cada correção ficam na aba
+<sub>¹ Correção feita antes da criação do repositório: ela já está incluída no commit inicial, sem PR próprio.</sub>
+
+**Progresso:** 3 de 20 resolvidos. Os PRs de cada correção ficam na aba
 [Pull requests](https://github.com/wvdouglas/loja-com-bugs-praticar-js/pulls?q=is%3Apr).
 
 ---
