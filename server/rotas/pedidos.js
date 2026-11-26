@@ -38,13 +38,23 @@ router.post('/', autenticar, async (req, res) => {
 
   const dados = await db.ler();
 
-  for (const item of itens) {
+  // for (const item of itens) {
+  //   const produto = dados.produtos.find((p) => p.id === item.produtoId);
+
+  //   if (produto.estoque > 0) {
+  //     produto.estoque >= item.quantidade;
+  //   } else {
+  //     return res.status(409).json({ erro: `Produto "${produto.nome}" sem estoque.` });
+  //   }
+  // }
+//VT-1006
+    for (const item of itens) {
     const produto = dados.produtos.find((p) => p.id === item.produtoId);
 
-    if (produto.estoque > 0) {
-      produto.estoque -= item.quantidade;
-    } else {
-      return res.status(409).json({ erro: `Produto "${produto.nome}" sem estoque.` });
+    if (produto.estoque < item.quantidade) {
+      return res.status(409).json({
+        erro: `Produto "${produto.nome}" sem estoque suficiente. Disponível: ${produto.estoque}.`,
+      });
     }
   }
 
